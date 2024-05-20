@@ -1,4 +1,4 @@
-class IconsPath {
+class ImagePath {
   static String get root => 'assets/images/';
 
   static String get homeOff => '${root}bottom_nav_home_off_icon.jpg';
@@ -13,4 +13,8 @@ class IconsPath {
   static String get reelsOn => '${root}bottom_nav_reels_on_icon.jpg';
 
   static String get profile => '${root}profile_img.jpeg';
+
+  static String get logo => '${root}logo.jpg';
+  static String get active => '${root}bottom_nav_active_off_icon.jpg';
+  static String get dm => '${root}direct_msg_icon.jpg';
 }

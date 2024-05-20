@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-enum Shape { ACTIVE, OFF }
+enum Shape { ON, OFF, STORY }
 
 class ImageAvatar extends StatelessWidget {
   final String imgUrl;
@@ -16,7 +16,7 @@ class ImageAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return type == Shape.ACTIVE ? _activeAvatar() : _offAvatar();
+    return type == Shape.ON ? _activeAvatar() : _offAvatar();
   }
 
   Widget _basicAvatar() {
