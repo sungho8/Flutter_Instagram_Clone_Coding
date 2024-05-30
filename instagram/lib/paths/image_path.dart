@@ -17,4 +17,5 @@ class ImagePath {
   static String get logo => '${root}logo.jpg';
   static String get active => '${root}bottom_nav_active_off_icon.jpg';
   static String get dm => '${root}direct_msg_icon.jpg';
+  static String get addStory => '${root}plus_icon.png';
 }

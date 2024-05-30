@@ -3,7 +3,7 @@ import 'package:get/route_manager.dart';
 
 class ImageData extends StatelessWidget {
   final String path;
-  final double width;
+  final double? width;
 
   const ImageData({super.key, required this.path, this.width = 70});
 
@@ -11,7 +11,7 @@ class ImageData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       path,
-      width: width / Get.mediaQuery.devicePixelRatio,
+      width: width! / Get.mediaQuery.devicePixelRatio,
     );
   }
 }
